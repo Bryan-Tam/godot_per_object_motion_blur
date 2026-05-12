@@ -167,7 +167,7 @@ func _handle_textures_creation(render_scene_buffers: RenderSceneBuffersRD, textu
 			render_scene_buffers.clear_context(context)
 	else:
 		var usage_bits : int = RenderingDevice.TEXTURE_USAGE_SAMPLING_BIT | RenderingDevice.TEXTURE_USAGE_STORAGE_BIT
-		render_scene_buffers.create_texture(context, texture_name, format, usage_bits, RenderingDevice.TEXTURE_SAMPLES_1, texture_size, 1, 1, true)
+		render_scene_buffers.create_texture(context, texture_name, format, usage_bits, RenderingDevice.TEXTURE_SAMPLES_1, texture_size, 1, 1, true, false)
 
 
 func _render_callback(p_effect_callback_type, p_render_data):
